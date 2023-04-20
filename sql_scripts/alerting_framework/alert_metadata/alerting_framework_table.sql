@@ -1,0 +1,2 @@
+insert into CONTROL_DB.UTILITY.ALERTING_FRAMEWORK(alert_date,alert_name,owner_email,escalation_flag,escalation_date)
+values (current_timestamp, upper('&{v_alert_name}'), upper('&{v_owner_email}'), 0, current_timestamp());
